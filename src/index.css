@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=2000') no-repeat center center/cover;
+  color: #ffffff;
+}
+
+/* Custom Styles */
+.glass-container {
+  background: rgba(33, 49, 61, 0.85);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.glass-container:hover {
+  transform: translateY(-5px);
+}
+
+.navbar-custom {
+  background-color: rgba(33, 49, 61, 0.95);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-link {
+  color: #f1c40f;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-link:hover {
+  background-color: #f39c12;
+  color: #ffffff;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.accent-button {
+  background-color: #f39c12;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.accent-button:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+}
+
+.footer-custom {
+  background-color: rgba(33, 49, 61, 0.9);
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+  color: #f1c40f;
+}
